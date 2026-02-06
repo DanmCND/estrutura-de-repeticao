@@ -23,7 +23,7 @@ else:
         count += 1  # Incrementa o contador em 1        
 '''
 
-#===segunda versão===(estudado em casa)
+#===segunda versão===
 
 while True:
     num = int(input("Digite um número para ver sua tabuada: "))
