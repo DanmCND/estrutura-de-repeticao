@@ -17,7 +17,7 @@ if resposta == "s":
      count = 0
 if num < 0 or mult <0:
     print("Insira apenas números positivos.")
-else:
+else: 
     while count <= mult:
         print(f"{num} x {count} = {num * count}")
         count += 1  # Incrementa o contador em 1        
@@ -26,15 +26,16 @@ else:
 #===segunda versão===
 
 while True:
-    num = int(input("Digite um número para ver sua tabuada: "))
-    mult = int(input("Digite até qual número a tabuada deve ir: "))
+    num = int(input("Digite um número para ver sua tabuada:\n R: "))
+    mult = int(input("Digite até qual número a tabuada deve ir:\n R: "))
     count = 0
     if num < 0 or mult < 0:
         print("Insira apenas números positivos.")
+        continue
     else:
         while count <= mult:
             print(f"{num} x {count} = {num * count}")
             count += 1  # Incrementa o contador em 1
-    resposta = input("Deseja gerar outra tabuada? (s/n): ").lower()
+    resposta = input("Deseja gerar outra tabuada? (s/n):\n R: ").lower()
     if resposta != "s":
         break
